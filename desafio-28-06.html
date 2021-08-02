@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Desafios</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*Escreva um programa que leia o valor unitário de um produto e o número de peças desse produto e apresente o valor total da compra.*/
+			var valorUnitario;
+			var numeroPecas;
+			var valorTotal;
+
+			valorUnitario = parseFloat(prompt("Digite o valor do produto."));
+			numeroPecas = parseInt(prompt("Digite a quantidade."));
+
+			valorTotal = valorUnitario * numeroPecas;
+
+			document.write("O valor total da sua compra é R$" + valorTotal.toFixed(2));
+			</script>
+	</body>
+</html>
