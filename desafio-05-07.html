@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Desafios</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*Faça um programa que peça ao usuário que informe três números e imprima-os em ordem crescente.*/
+			var num1;
+			var num2; 
+			var num3;
+			var apoio;
+
+			num1 = parseInt(prompt("Digite o primeiro número."));
+			num2 = parseInt(prompt("Digite o segundo número.")); 
+			num3 = parseInt(prompt("Digite o terceiro número."));
+
+			/*document.write("A ordem incorreta é: " +num1+ ", " +num2+ ", " +num3);*/
+
+			if(num2>num3){
+				apoio = num2;
+				num2 = num3;
+				num3 = apoio;
+			}
+
+			if(num1>num2){
+				apoio = num1;
+				num1 = num2;
+				num2 = apoio;
+			}
+
+			if(num2>num3){
+				apoio = num2;
+				num2 = num3;
+				num3 = apoio;
+			}
+
+			document.write("<br><br>A ordem correta é: " +num1+ ", " +num2+ ", " +num3);
+
+		</script>
+	</body>
+</html>
